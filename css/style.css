@@ -1,0 +1,381 @@
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+body{
+    background: #d3d3d3;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.navBar {
+    height: 100vh;
+    width: 25%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoPos {
+    width: 100%;
+    height: 70px;
+    margin-top: 3.8vh;
+    display: flex;
+}
+
+.logoContent{
+    margin: auto;
+    display: flex;
+    margin-left: 10%;
+}
+
+.logoBox {
+    width: 50px;
+    height: 50px;
+    background: #405de6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logoBar {
+    height: 80%;
+    width: 8px;
+    background: #fff;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    margin-top: auto;
+    border-radius: 40px;
+}
+
+.logoBar:nth-of-type(1){
+    height: 40%;
+}
+
+.logoBar:nth-of-type(3){
+    height: 60%;
+}
+
+.logoText {
+    font-size: 25px;
+    font-weight: bold;
+    color: #405de6;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.sortingTextPos {
+    width: 100%;
+    height: 30px;
+    margin-top: 3vh;
+}
+
+.sortingText {
+    font-size: 18px;
+    color: #888;
+    margin-left: 10%;
+}
+
+.sortingAlgos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.1vh;
+}
+
+.sortingAlgo {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-bottom: 15px;
+    background: #fff;
+    transition: all .2s;
+}
+
+.sortingAlgo:hover{
+    cursor: pointer;
+    background: #eee;
+}
+
+.algoImage {
+    height: 23px;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    filter: invert(50%);
+}
+
+.algoTitle {
+    font-size: 17px;
+    margin-left: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #333;
+    transition: all .2s;
+}
+
+.thingy {
+    width: 16px;
+    height: 3px;
+    background: #405de6;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.thingy::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 3px;
+    background: #405de6;
+    transform: translateY(-6px);
+    border-radius: 10px;
+}
+
+.thingy::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 3px;
+    background: #405de6;
+    transform: translateY(3px);
+    border-radius: 10px;
+}
+
+.algoSelected > .thingy{
+    opacity: 1;
+}
+
+.algoSelected > .algoTitle{
+    color: #405de6;
+}
+
+.algoSelected::before {
+    content: "";
+    height: 40px;
+    width: 4px;
+    background: #405de6;
+    position: absolute;
+}
+
+.amountPos {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.amountText {
+    font-size: 18px;
+    color: #888;
+    margin-left: 10%;
+}
+
+.amountNumsPos{
+    width: 80%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    margin-top: 1.7vh;
+}
+
+.numBox {
+    width: 40px;
+    height: 30px;
+    background: #bbb;
+    color: #fff;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    transform: scale(1);
+    transition: all .2s;
+}
+
+.numBox:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.numSelected{
+    background: #405de6;
+}
+
+.num {
+    margin: auto;
+    font-size: 17px;
+}
+
+.delayPos{
+    width: 100%;
+    height: 30px;
+    margin-top: 3vh;
+}
+
+.delayBoxPos{
+    display: flex;
+    margin-top: 1.4vh;
+}
+
+.delayBoxPos > .algoImage{
+    height: 30px;
+    margin-left: 14%;
+}
+
+.delayInput {
+    width: 60px;
+    height: auto;
+    border: none;
+    border-bottom: solid 2px #bbb;
+    color: #777;
+    font-family: Montserrat;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: end;
+    padding-right: 5px;
+    transition: all .2s;
+}
+
+.delayInput:focus{
+    color: #405de6;
+    border-color: #405de6;
+}
+
+.msText{
+    color: #888;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+
+.sortBtnPos {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 2vh;
+}
+
+.sortBtn {
+    width: 80%;
+    height: 40px;
+    background: #405de6;
+    color: #fff;
+    display: flex;
+    margin-left: 10%;
+    border-radius: 50px;
+    transform: scale(1);
+    transition: all .2s;
+}
+
+.sortBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sortText {
+    margin: auto;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main {
+    height: 100%;
+    width: calc(100% - 300px);
+    display: flex;
+}
+
+.barsContent {
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    margin: auto;
+    border-radius: 25px;
+    padding: 12px;
+    display: flex;
+}
+
+.bar {
+    background: #405de6;
+    height: 0%;
+    width: 0%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.activeBar{
+    background: #e64040;
+}
+
+.pivotBar{
+    background: #338821;
+}
+
+
+
+
+
+
+
+@media screen and (max-height: 700px) {
+    .logoPos{
+        margin-top: 1.7vh;
+    }
+
+    .sortingTextPos{
+        margin-top: 1.8vh;
+    }
+
+    .sortingAlgo{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    .navBar{
+        position: fixed;
+        width: 40vw;
+        max-width: 100vw;
+        border-radius: 0;
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navBar{
+        position: fixed;
+        width: 100vw;
+        max-width: 100vw;
+        border-radius: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

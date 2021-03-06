@@ -1,0 +1,100 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Visual Sorting</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/css/all.css" rel="stylesheet">
+	  <link href="css/alt/css/all.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+  </head>
+  
+  <body>
+    <div class="navBar">
+      <div class="logoPos">
+        <div class="logoContent">
+          <div class="logoBox">
+            <div class="logoBar"></div>
+            <div class="logoBar"></div>
+            <div class="logoBar"></div>
+          </div>
+          <div class="logoText">Visual Sorts</div>
+        </div>
+      </div>
+
+      <div class="sortingTextPos">
+        <div class="sortingText">Sorting Algorithm</div>
+      </div>
+
+      <div class="sortingAlgos">
+        <div class="sortingAlgo algoSelected" sort="bubble">
+          <img class="algoImage" src="img/bubble.png">
+          <div class="algoTitle">Bubble Sort</div>
+          <div class="thingy"></div>
+        </div>
+        <div class="sortingAlgo" sort="insertion">
+          <img class="algoImage" src="img/insertion.png">
+          <div class="algoTitle">Insertion Sort</div>
+          <div class="thingy"></div>
+        </div>
+        <div class="sortingAlgo" sort="quick">
+          <img class="algoImage" src="img/quick.png">
+          <div class="algoTitle">Quick Sort</div>
+          <div class="thingy"></div>
+        </div>
+        <div class="sortingAlgo" sort="selection">
+          <img class="algoImage" src="img/selection.png">
+          <div class="algoTitle">Selection Sort</div>
+          <div class="thingy"></div>
+        </div>
+        <div class="sortingAlgo" sort="radix">
+          <img class="algoImage" src="img/radix.png">
+          <div class="algoTitle">Radix Sort</div>
+          <div class="thingy"></div>
+        </div>
+      </div>
+
+      <div class="amountPos">
+        <div class="amountText">Amount of Numbers</div>
+      </div>
+
+      <div class="amountNumsPos">
+        <div class="numBox">
+          <div class="num">25</div>
+        </div>
+        <div class="numBox numSelected">
+          <div class="num">50</div>
+        </div>
+        <div class="numBox">
+          <div class="num">75</div>
+        </div>
+        <div class="numBox">
+          <div class="num">100</div>
+        </div>
+      </div>
+
+      <div class="delayPos">
+        <div class="amountText">Delay</div>
+      </div>
+
+      <div class="delayBoxPos">
+        <img class="algoImage" src="img/delay.png">
+        <input type="text" class="delayInput" onkeypress="return numberFilter(event)">
+        <div class="msText">ms</div>
+      </div>
+
+      <div class="sortBtnPos">
+        <div class="sortBtn">
+          <div class="sortText">Sort</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main">
+      <div class="barsContent"></div>
+    </div>
+
+  </body>
+  <script src="js/main.js"></script>
+</html>
